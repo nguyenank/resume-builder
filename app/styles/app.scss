@@ -205,6 +205,27 @@ Editor Tools
   }
 }
 
+.contactinfo {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  .contactinfo__left {
+    text-align: left;
+    width: 200px;
+  }
+
+  .contactinfo__center {
+    text-align: center;
+    width: 200px;
+  }
+
+  .contactinfo__right {
+    text-align: right;
+    width: 200px;
+  }
+}
+
 .columns {
   display: flex;
   justify-content: space-between;

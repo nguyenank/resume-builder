@@ -1,11 +1,14 @@
 <div class="resume">
   <div class="section header">
     <h1 class="name">{{resume.header.name}}</h1>
-    <div class="columns">
-      <div class="columns__left">
+    <div class="contactinfo">
+      <div class="contactinfo__left">
         <div>{{resume.header.phone}}</div>
       </div>
-      <div class="columns__right">
+      <div class="contactinfo__center">
+        <div>{{resume.header.email}}</div>
+      </div>
+      <div class="contactinfo__right">
         {{#each resume.header.links as |link|}}
           {{markdown-to-html link}}
         {{/each}}
@@ -29,19 +32,8 @@
 
   <div class="section">
     <h3 class="section__title">Computer Skills</h3>
-
-    <div class="columns">
-      <div class="columns__left">
-        <div><strong>{{resume.skills.proficient}}</strong></div>
-        <div>{{resume.skills.proficientSkills}}</div>
-        <div><strong>{{resume.skills.exposure}}</strong></div>
-        <div>{{resume.skills.exposureSkills}}</div>
-      </div>
-      <div class="columns__right">
-        <div><strong>{{resume.education.location}}</strong></div>
-        <div>{{resume.education.graduationDate}}</div>
-      </div>
-    </div>
+    <div><strong>Proficient:</strong> Python, Java, HTML/CSS, Git, Stata</div>
+    <div><strong>Exposure:</strong> JavaScript, SQL, Swift</div>
   </div>
 
   <div class="section">
