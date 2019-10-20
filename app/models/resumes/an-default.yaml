@@ -1,11 +1,10 @@
 header:
   name: An Nguyen
-  phone: (832)-660-2618
+  phone: available on request
   links:
     - "[github.com/nguyenank](https://github.com/nguyenank)"
 
 experience:
-
   - title: Research Assistant, Computer Science Department
     company: Harvey Mudd College
     location: Claremont, CA
@@ -15,7 +14,6 @@ experience:
       - Contributed major improvements to [Skulpt](https://github.com/skulpt/skulpt), an open-source JavaScript implementation of Python.
       - Rearchitected underlying type system to be more extensible, unblocking long-standing feature requests.
       - Introduced profiling and timing tools and decreased test run time by 6%.
-
 #skills:
 #  proficient: Proficient
 #  proficientSkills: Python, Java, Git, Stata
@@ -25,8 +23,8 @@ experience:
 education:
   school: Harvey Mudd College
   location: Claremont, CA
-  graduationDate: Expected: May 2022
-  degree: "B.S. in Computer Science, GPA: 3.89"
+  graduationDate: Expected May 2022
+  degree: B.S. in Computer Science, GPA 3.89
 
 projects:
   - name: Customer Feedback Tool

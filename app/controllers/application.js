@@ -1,5 +1,5 @@
 import Controller from '@ember/controller';
-import PREFILLED_RESUME from 'resume-builder/models/resumes/an';
+import PREFILLED_RESUME from 'resume-builder/models/resumes/marie-original';
 import BLANK_RESUME from 'resume-builder/models/resumes/blank';
 import storageAvailable from 'resume-builder/utils/storage-available';
 import yaml from 'js-yaml';
