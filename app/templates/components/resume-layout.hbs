@@ -4,12 +4,43 @@
     <div class="columns">
       <div class="columns__left">
         <div>{{resume.header.phone}}</div>
-        <div>{{resume.header.location}}</div>
       </div>
       <div class="columns__right">
         {{#each resume.header.links as |link|}}
           {{markdown-to-html link}}
         {{/each}}
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h3 class="section__title">Education</h3>
+
+    <div class="columns">
+      <div class="columns__left">
+        <div><strong>{{resume.education.school}}</strong></div>
+        <div>{{resume.education.degree}}</div>
+      </div>
+      <div class="columns__right">
+        <div><strong>{{resume.education.location}}</strong></div>
+        <div>{{resume.education.graduationDate}}</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h3 class="section__title">Computer Skills</h3>
+
+    <div class="columns">
+      <div class="columns__left">
+        <div><strong>{{resume.skills.proficient}}</strong></div>
+        <div>{{resume.skills.proficientSkills}}</div>
+        <div><strong>{{resume.skills.exposure}}</strong></div>
+        <div>{{resume.skills.exposureSkills}}</div>
+      </div>
+      <div class="columns__right">
+        <div><strong>{{resume.education.location}}</strong></div>
+        <div>{{resume.education.graduationDate}}</div>
       </div>
     </div>
   </div>
@@ -61,18 +92,4 @@
     {{/each}}
   </div>
 
-  <div class="section">
-    <h3 class="section__title">Education</h3>
-
-    <div class="columns">
-      <div class="columns__left">
-        <div><strong>{{resume.education.school}}</strong></div>
-        <div>{{resume.education.degree}}</div>
-      </div>
-      <div class="columns__right">
-        <div><strong>{{resume.education.location}}</strong></div>
-        <div>{{resume.education.graduationDate}}</div>
-      </div>
-    </div>
-  </div>
 </div>

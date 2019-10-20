@@ -1,5 +1,5 @@
 import Controller from '@ember/controller';
-import PREFILLED_RESUME from 'resume-builder/models/resumes/marie';
+import PREFILLED_RESUME from 'resume-builder/models/resumes/an';
 import BLANK_RESUME from 'resume-builder/models/resumes/blank';
 import storageAvailable from 'resume-builder/utils/storage-available';
 import yaml from 'js-yaml';
@@ -31,6 +31,7 @@ export default Controller.extend({
 
       if (savedResume) {
         return savedResume;
+        //return PREFILLED_RESUME;
       }
     }
 

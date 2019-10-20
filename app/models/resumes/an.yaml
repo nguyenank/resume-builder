@@ -1,0 +1,43 @@
+header:
+  name: An Nguyen
+  phone: (832)-660-2618
+  links:
+    - "[github.com/nguyenank](https://github.com/nguyenank)"
+
+experience:
+
+  - title: Research Assistant, Computer Science Department
+    company: Harvey Mudd College
+    location: Claremont, CA
+    date: May—July 2019
+    details:
+      - Redesigned [CodeSkulptor](http://py3.codeskulptor.org/) programming tool for student usability in collaboration with a UX researcher.
+      - Contributed major improvements to [Skulpt](https://github.com/skulpt/skulpt), an open-source JavaScript implementation of Python.
+      - Rearchitected underlying type system to be more extensible, unblocking long-standing feature requests.
+      - Introduced profiling and timing tools and decreased test run time by 6%.
+
+#skills:
+#  proficient: Proficient
+#  proficientSkills: Python, Java, Git, Stata
+#  exposure: Exposure
+#  exposureSkills: Node.js, Swift, SQL
+
+education:
+  school: Harvey Mudd College
+  location: Claremont, CA
+  graduationDate: Expected: May 2022
+  degree: "B.S. in Computer Science, GPA: 3.89"
+
+projects:
+  - name: Customer Feedback Tool
+    date: July—October 2017
+    details:
+      - Architected system to create surveys, render questions in consistent style, and collect encrypted feedback.
+      - Coordinated team of three engineers and a product manager; led reprioritization when requirements changed.
+      - Used by over 15 teams that would otherwise build their own surveys—installation is two lines of code.
+  - name: Shared Infrastructure Improvements
+    date: January 2017 — Present
+    details:
+      - Rolled out strict Content Security Policy to existing app with over 100,000 daily users without a single disruption.
+      - Implemented new [Kochiku](https://github.com/square/kochiku) build partitioner to run tests based on files changed; up to 94% reduction in shards.
+      - Created automated reports to track and identify test flakes, which were adopted and extended by four other teams.
