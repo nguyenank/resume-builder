@@ -22,24 +22,38 @@
       <div class="columns__left">
         <div><strong>{{resume.education.school}}</strong></div>
         <div>{{resume.education.degree}}</div>
+       <br />
+        <div><strong>{{resume.education.school2}}</strong></div>
+        <div>{{resume.education.gpa}}</div>
+        <br />
+        <div><strong>Achievements</strong></div>
+        <ul class="list">
+          {{#each resume.education.awards as |detail|}}
+            <li class="list__item">{{markdown-to-html detail}}</li>
+          {{/each}}
+        </ul>
       </div>
       <div class="columns__right">
         <div><strong>{{resume.education.location}}</strong></div>
         <div>{{resume.education.graduationDate}}</div>
+      <br />
+        <div><strong>{{resume.education.location2}}</strong></div>
+        <div>{{resume.education.graduationDate2}}</div>
       </div>
     </div>
+</div>
+
+  <div class="section">
+    <h3 class="section__title">Skills</h3>
+    <div><strong>Proficient:</strong> {{resume.skills.proficient}}</div>
+    <div><strong>Experience:</strong> {{resume.skills.experience}} </div>
+    <div><strong>Exposure:</strong> {{resume.skills.exposure}}</div>
   </div>
 
   <div class="section">
-    <h3 class="section__title">Computer Skills</h3>
-    <div><strong>Proficient:</strong> Python, Java, HTML/CSS, Git, Stata</div>
-    <div><strong>Exposure:</strong> JavaScript, SQL, Swift</div>
-  </div>
+    <h3 class="section__title">Work Experience</h3>
 
-  <div class="section">
-    <h3 class="section__title">Experience</h3>
-
-    {{#each resume.experience as |job|}}
+    {{#each resume.workexperience as |job|}}
       <div class="section__subsection">
         <div class="columns">
           <div class="columns__left">
@@ -62,6 +76,31 @@
   </div>
 
   <div class="section">
+    <h3 class="section__title">Leadership/Volunteer Experience</h3>
+
+    {{#each resume.lvexperience as |job|}}
+      <div class="section__subsection">
+        <div class="columns">
+          <div class="columns__left">
+            <div><strong>{{job.company}}</strong></div>
+            <div><em>{{job.title}}</em></div>
+          </div>
+          <div class="columns__right">
+            <div><strong>{{job.location}}</strong></div>
+            <div>{{job.date}}</div>
+          </div>
+        </div>
+
+        <ul class="list">
+          {{#each job.details as |detail|}}
+            <li class="list__item">{{markdown-to-html detail}}</li>
+          {{/each}}
+        </ul>
+      </div>
+    {{/each}}
+  </div>
+<!---
+  <div class="section">
     <h3 class="section__title">Projects</h3>
 
     {{#each resume.projects as |project|}}
@@ -82,5 +121,5 @@
       </div>
     {{/each}}
   </div>
-
+-->
 </div>
