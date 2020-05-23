@@ -1,9 +1,11 @@
 <div class="resume">
   <div class="section header">
     <h1 class="name">{{resume.header.name}}</h1>
-            <div>{{resume.header.phone}} ● {{resume.header.email}}</div>
+    <!--
+            <div>{{resume.header.phone}} ● {{resume.header.email}} </div>
+          -->
     <div class="contactinfo">
-      <!---
+
       <div class="contactinfo__left">
         <div>{{resume.header.phone}}</div>
       </div>
@@ -15,7 +17,7 @@
           {{markdown-to-html link}}
         {{/each}}
       </div>
-        -->
+
     </div>
   </div>
 
@@ -25,36 +27,38 @@
       <div class="columns__left">
         <div><strong>{{resume.education.school}}</strong></div>
         <div>{{resume.education.degree}}</div>
-       <br />
-        <div><strong>{{resume.education.school2}}</strong></div>
-        <div>{{resume.education.gpa}}</div>
-        <br />
-        <div><strong>Achievements</strong></div>
-        <ul class="list">
-          {{#each resume.education.awards as |detail|}}
-            <li class="list__item">{{markdown-to-html detail}}</li>
-          {{/each}}
-        </ul>
       </div>
       <div class="columns__right">
         <div><strong>{{resume.education.location}}</strong></div>
         <div>{{resume.education.graduationDate}}</div>
-      <br />
-        <div><strong>{{resume.education.location2}}</strong></div>
-        <div>{{resume.education.graduationDate2}}</div>
       </div>
     </div>
+    <br />
+    <div><strong>Selected Coursework:</strong> {{resume.education.coursework}}</div>
+    <ul class="list">
+        <li class="list__item"><strong>In Progress:</strong> {{resume.education.inprogress}}</li>
+    </ul>
 </div>
 
-  <div class="section">
-    <h3 class="section__title">Skills</h3>
-    <div><strong>Proficient:</strong> {{resume.skills.proficient}}</div>
-    <div><strong>Experience:</strong> {{resume.skills.experience}} </div>
-    <div><strong>Exposure:</strong> {{resume.skills.exposure}}</div>
-  </div>
+<div class="section">
+  <h3 class="section__title">Awards</h3>
+<ul class="list">
+  {{#each resume.awards as |detail|}}
+    <li class="list__item">{{markdown-to-html detail}}</li>
+  {{/each}}
+</ul>
+</div>
+
+<div class="section">
+  <h3 class="section__title">Skills</h3>
+  <div><strong>Proficient:</strong> {{resume.skills.proficient}}</div>
+  <div><strong>Experience:</strong> {{resume.skills.experience}} </div>
+  <div><strong>Exposure:</strong> {{resume.skills.exposure}}</div>
+</div>
+
 
   <div class="section">
-    <h3 class="section__title">Work Experience</h3>
+    <h3 class="section__title">Work/Research Experience</h3>
 
     {{#each resume.workexperience as |job|}}
       <div class="section__subsection">
@@ -79,7 +83,7 @@
   </div>
 
   <div class="section">
-    <h3 class="section__title">Leadership/Volunteer Experience</h3>
+    <h3 class="section__title">Leadership/Volunteer Activities</h3>
 
     {{#each resume.lvexperience as |job|}}
       <div class="section__subsection">
@@ -102,7 +106,7 @@
       </div>
     {{/each}}
   </div>
-<!---
+<!--
   <div class="section">
     <h3 class="section__title">Projects</h3>
 
@@ -125,4 +129,5 @@
     {{/each}}
   </div>
 -->
+
 </div>

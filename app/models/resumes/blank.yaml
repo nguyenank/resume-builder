@@ -1,9 +1,9 @@
 header:
   name:
-  location:
   phone:
+  email:
   links:
-    - # You can use Markdown here!
+    - "[display text](link)"
 
 education:
   school:
@@ -11,17 +11,34 @@ education:
   graduationDate:
   degree:
 
-experience:
+  coursework:
+  inprogress:
+
+awards:
+    - # Write as many bullet points as you want!
+    - # You can use Markdown here!
+
+skills:
+  proficient:
+  experience:
+  exposure:
+
+workexperience: #include multiple!
+
   - title:
     company:
     location:
     date:
     details:
-      - # Write as many bullet points as you want!
-      - # You can use Markdown here!
+        - # Write as many bullet points as you want!
+        - # You can use Markdown here!
 
-projects:
-  - name: # You can use Markdown here!
+
+lvexperience: #include multiple!
+  - title:
+    company:
+    location:
     date:
     details:
-      - # You can use Markdown here!
+        - # Write as many bullet points as you want!
+        - # You can use Markdown here!
